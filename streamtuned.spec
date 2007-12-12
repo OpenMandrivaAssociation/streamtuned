@@ -1,6 +1,6 @@
 %define name	streamtuned
 %define version	0.16.2
-%define release 1mdk
+%define release %mkrel 1
 
 Name: 	 	%{name}
 Summary: 	Audio/Video stream player and recorder
