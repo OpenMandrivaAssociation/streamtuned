@@ -43,7 +43,7 @@ cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
 [Desktop Entry]
 Type=Application
 Exec=%{name}
-Icon=%{name}.png
+Icon=%{name}
 Name=StreamTuned
 Comment=A/V stream recorder
 Categories=Audio;
