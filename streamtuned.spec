@@ -38,9 +38,15 @@ bzcat %{SOURCE1} > %buildroot/%_datadir/%name/parsers/shoutcast.pl
 chmod 755 %buildroot/%_datadir/%name/parsers/*.pl
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="StreamTuned" longtitle="A/V stream recorder" section="Multimedia/Sound"
+mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications/
+cat << EOF > %buildroot%{_datadir}/applications/mandriva-%{name}.desktop
+[Desktop Entry]
+Type=Application
+Exec=%{name}
+Icon=%{name}.png
+Name=StreamTuned
+Comment=A/V stream recorder
+Categories=Audio;
 EOF
 
 #icons
@@ -67,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc bugs README misc
 %{_bindir}/%name
 %{_datadir}/%name
-%{_menudir}/%name
+%{_datadir}/applications/mandriva-%name.desktop
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
