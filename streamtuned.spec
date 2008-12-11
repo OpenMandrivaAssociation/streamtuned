@@ -13,7 +13,7 @@ URL:		http://home.kabelfoon.nl/~moongies/streamtuned.html
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	ImageMagick qt3-devel
+BuildRequires:	imagemagick qt3-devel
 BuildRequires:	fftw2-devel
 Requires:	wget perl-XML-Simple perl-XML-DOM mplayer
 
