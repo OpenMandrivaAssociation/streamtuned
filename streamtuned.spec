@@ -9,7 +9,7 @@ Release: 	%{release}
 
 Source:		%{name}-v0.16_2.tar.bz2
 Source1:	shoutcast.pl.bz2
-URL:		http://home.kabelfoon.nl/~moongies/streamtuned.html
+URL:		https://home.kabelfoon.nl/~moongies/streamtuned.html
 License:	GPL
 Group:		Sound
 BuildRoot:	%{_tmppath}/%{name}-buildroot
